@@ -1,79 +1,212 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Webkit-scrollbar-generator : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Webkit-scrollbar-generator</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mikethedj4/Webkit-Scrollbar-Generator">View on GitHub</a>
-
-          <h1 id="project_title">Webkit-scrollbar-generator</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mikethedj4/Webkit-Scrollbar-Generator/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mikethedj4/Webkit-Scrollbar-Generator/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Webkit-scrollbar-generator maintained by <a href="https://github.com/mikethedj4">mikethedj4</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<head>
+<title>Webkit Scrollbar Generator</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+<link rel="SHORTCUT ICON" href="favicon.ico">
+<link rel="stylesheet" href="assets/style.css" media="screen" />
+</head>
+<body>
+  <div class="preview"></div>
+  
+  <div class="design">      
+      <button onclick='saveTextAsFile()'>save as css file</button>
+      <header>main:</header>
+      <div class="drop">
+        <table class="fill">
+          <tr>
+            <td>bg:</td>
+            <td><input class="main-bg" type="color" value="#666666" /></td>
+          </tr>
+          <tr>
+            <td>bgHover:</td>
+            <td><input class="main-bg-hover" type="color" value="#666666" /></td>
+          </tr>
+          <tr>
+            <td>bgActive:</td>
+            <td><input class="main-bg-active" type="color" value="#333333" /></td>
+          </tr>
+          <tr>
+            <td>Size:</td>
+            <td><center><input class="main-scroll-size" type="range" value="2" /></center></td>
+            <td><span class="mirror-main-size"></span>px</td>
+          </tr>
+          <tr>
+            <td>Curve:</td>
+            <td><center><input class="main-curve" type="range" /></center></td>
+            <td><span class="mirror-track-curve"></span>px</td>
+          </tr>
+        </table>
+      </div>
     
+      <header>button:</header>
+      <div class="drop">
+        <table class="fill">
+          <tr>
+            <td>bg:</td>
+            <td><input class="button-bg" type="color" value="#e1e1e1" /></td>
+          </tr>
+          <tr>
+            <td>bgHover:</td>
+            <td><input class="button-bg-hover" type="color" value="#ffffff" /></td>
+          </tr>
+          <tr>
+            <td>bgActive:</td>
+            <td><input class="button-bg-active" type="color" value="#000000" /></td>
+          </tr>
+          <tr>
+            <td>Size:</td>
+            <td><center><input class="button-scroll-size" type="range" value="0" /></center></td>
+            <td><span class="mirror-button-size"></span>px</td>
+          </tr>
+          <tr>
+            <td>Curve:</td>
+            <td><center><input class="button-curve" type="range" /></center></td>
+            <td><span class="mirror-thumb-curve"></span>px</td>
+          </tr>
+        </table>
+      </div>
+      
+      <header>thumb:</header>
+      <div class="drop">
+        <table class="fill">
+          <tr>
+            <td>Border:</td>
+            <td><input class="thumb-border-size" type="range" value="0" /></td>
+            <td><span class="thumb-border-size-txt"></span>px</td>
+            <td>
+              <select class="thumb-border-style">
+                  <option value="none">none</option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                  <option value="dashed">dashed</option>
+                  <option value="double">double</option>
+                  <option value="ridge">ridge</option>
+                  <option value="groove">groove</option>
+                  <option value="inset">inset</option>
+                  <option value="outset">outset</option>
+                </select>
+            </td>
+            <td><input class="thumb-border-color" type="color" value="#ffffff" /></td>
+          </tr>
+        </table>
+      </div>
 
-  </body>
+      <header>trackbar:</header>
+      <div class="drop">
+        <table class="fill">
+          <tr>
+            <td>Border:</td>
+            <td><input class="track-border-size" type="range" value="0" /></td>
+            <td><span class="track-border-size-txt"></span>px</td>
+            <td>
+              <select class="track-border-style">
+                  <option value="none">none</option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                  <option value="dashed">dashed</option>
+                  <option value="double">double</option>
+                  <option value="ridge">ridge</option>
+                  <option value="groove">groove</option>
+                  <option value="inset">inset</option>
+                  <option value="outset">outset</option>
+                </select>
+            </td>
+            <td><input class="track-border-color" type="color" value="#ffffff" /></td>
+          </tr>
+        </table>
+      </div>
+    
+      <textarea class="add-txt hide">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p><p>Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.</p><p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In euismod ultrices facilisis. Vestibulum porta sapien adipiscing augue congue id pretium lectus molestie. Proin quis dictum nisl. Morbi id quam sapien, sed vestibulum sem. Duis elementum rutrum mauris sed convallis. Proin vestibulum magna mi. Aenean tristique hendrerit magna, ac facilisis nulla hendrerit ut. Sed non tortor sodales quam auctor elementum. Donec hendrerit nunc eget elit pharetra pulvinar. Suspendisse id tempus tortor. Aenean luctus, elit commodo laoreet commodo, justo nisi consequat massa, sed vulputate quam urna quis eros. Donec vel.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p><p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p><p>Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.</p><p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In euismod ultrices facilisis. Vestibulum porta sapien adipiscing augue congue id pretium lectus molestie. Proin quis dictum nisl. Morbi id quam sapien, sed vestibulum sem. Duis elementum rutrum mauris sed convallis. Proin vestibulum magna mi. Aenean tristique hendrerit magna, ac facilisis nulla hendrerit ut. Sed non tortor sodales quam auctor elementum. Donec hendrerit nunc eget elit pharetra pulvinar. Suspendisse id tempus tortor. Aenean luctus, elit commodo laoreet commodo, justo nisi consequat massa, sed vulputate quam urna quis eros. Donec vel.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p><p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p><p>Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.</p><p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In euismod ultrices facilisis. Vestibulum porta sapien adipiscing augue congue id pretium lectus molestie. Proin quis dictum nisl. Morbi id quam sapien, sed vestibulum sem. Duis elementum rutrum mauris sed convallis. Proin vestibulum magna mi. Aenean tristique hendrerit magna, ac facilisis nulla hendrerit ut. Sed non tortor sodales quam auctor elementum. Donec hendrerit nunc eget elit pharetra pulvinar. Suspendisse id tempus tortor. Aenean luctus, elit commodo laoreet commodo, justo nisi consequat massa, sed vulputate quam urna quis eros. Donec vel.</p>
+      </textarea>
+
+      <header>generated code:</header>
+      <div class="drop">
+        
+        <pre class="preview-code hide">&lt;style type="text/css"&gt;
+::-webkit-scrollbar {
+  width: <span class="mirror-main-size"></span>px;
+  height: <span class="mirror-main-size"></span>px;
+}
+::-webkit-scrollbar-button {
+  width: <span class="mirror-button-size"></span>px;
+  height: <span class="mirror-button-size"></span>px;
+}
+::-webkit-scrollbar-thumb {
+  background: <span class="mirror-thumb-bg"></span>;
+  border: <span class="mirror-thumb-border"></span>;
+  border-radius: <span class="mirror-thumb-curve"></span>px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: <span class="mirror-thumb-hover-bg"></span>;
+}
+::-webkit-scrollbar-thumb:active {
+  background: <span class="mirror-thumb-active-bg"></span>;
+}
+::-webkit-scrollbar-track {
+  background: <span class="mirror-track-bg"></span>;
+  border: <span class="mirror-track-border"></span>;
+  border-radius: <span class="mirror-track-curve"></span>px;
+}
+::-webkit-scrollbar-track:hover {
+  background: <span class="mirror-track-hover-bg"></span>;
+}
+::-webkit-scrollbar-track:active {
+  background: <span class="mirror-track-active-bg"></span>;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+&lt;/style&gt;</pre>
+        
+        <pre class="save-code hide">::-webkit-scrollbar {
+  width: <span class="mirror-main-size"></span>px;
+  height: <span class="mirror-main-size"></span>px;
+}
+::-webkit-scrollbar-button {
+  width: <span class="mirror-button-size"></span>px;
+  height: <span class="mirror-button-size"></span>px;
+}
+::-webkit-scrollbar-thumb {
+  background: <span class="mirror-thumb-bg"></span>;
+  border: <span class="mirror-thumb-border"></span>;
+  border-radius: <span class="mirror-thumb-curve"></span>px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: <span class="mirror-thumb-hover-bg"></span>;
+}
+::-webkit-scrollbar-thumb:active {
+  background: <span class="mirror-thumb-active-bg"></span>;
+}
+::-webkit-scrollbar-track {
+  background: <span class="mirror-track-bg"></span>;
+  border: <span class="mirror-track-border"></span>;
+  border-radius: <span class="mirror-track-curve"></span>px;
+}
+::-webkit-scrollbar-track:hover {
+  background: <span class="mirror-track-hover-bg"></span>;
+}
+::-webkit-scrollbar-track:active {
+  background: <span class="mirror-track-active-bg"></span>;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}</pre>
+        
+        <center>
+          <textarea class="code" readonly></textarea>
+          <textarea id="save-code" style="display:none;"></textarea>
+          <textarea class="apply-html hide"></textarea>
+        </center>
+      </div>
+      
+  </div>
+  
+  
+  <script src='assets/jquery-1.10.2.min.js'></script>
+  <script src="assets/generator.js"></script>
+</body>
 </html>

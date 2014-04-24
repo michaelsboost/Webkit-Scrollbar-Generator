@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter3842"
+       x="-0.093866487"
+       width="1.187733"
+       y="-0.13802392"
+       height="1.2760478">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="15.833274"
+         id="feGaussianBlur3844" />
+    </filter>
+    <filter
+       id="filter3952"
+       inkscape:label="Electronic microscopy"
+       inkscape:menu="Bevels"
+       inkscape:menu-tooltip="Bevel, crude light, discoloration and glow like in electronic microscopy"
+       x="-0.15"
+       y="-0.15"
+       width="1.3"
+       height="1.3"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3954"
+         stdDeviation="0.5"
+         result="result6" />
+      <feComposite
+         id="feComposite3956"
+         in2="result6"
+         operator="in"
+         in="result6"
+         result="result91" />
+      <feBlend
+         id="feBlend3958"
+         in2="result91"
+         mode="multiply"
+         in="result6"
+         result="result2" />
+      <feGaussianBlur
+         id="feGaussianBlur3960"
+         stdDeviation="7"
+         result="result3"
+         in="result2" />
+      <feComposite
+         id="feComposite3962"
+         in2="result2"
+         result="result92" />
+      <feComposite
+         id="feComposite3964"
+         in2="result92"
+         operator="in"
+         in="result3"
+         result="result5" />
+      <feGaussianBlur
+         id="feGaussianBlur3966"
+         stdDeviation="1"
+         in="result5" />
+      <feSpecularLighting
+         id="feSpecularLighting3968"
+         surfaceScale="2"
+         specularConstant="1.5"
+         specularExponent="100"
+         result="result93">
+        <fePointLight
+           id="fePointLight3970"
+           x="-5000"
+           y="-5000"
+           z="20000" />
+      </feSpecularLighting>
+      <feComposite
+         id="feComposite3972"
+         in2="result5"
+         operator="arithmetic"
+         k1="1"
+         result="result93" />
+      <feComposite
+         id="feComposite3974"
+         in2="result93"
+         operator="arithmetic"
+         k2="0.1"
+         k3="1"
+         in="result5"
+         result="result94" />
+      <feBlend
+         id="feBlend3976"
+         in2="result94"
+         mode="multiply" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="92.145228"
+     inkscape:cy="200.7662"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.36218)">
+    <rect
+       style="fill:#1b2224;fill-opacity:1;stroke:none"
+       id="rect2985"
+       width="512"
+       height="512"
+       x="0"
+       y="540.36218" />
+    <text
+       xml:space="preserve"
+       style="font-size:19.37417792999999833px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#738881;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold;opacity:0.1"
+       x="6.2890778"
+       y="565.34583"
+       id="text3756"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3758"
+         x="6.2890778"
+         y="565.34583">Lorem ipsum dolor sit amet, consectetur adipiscing</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="589.56354"
+         id="tspan3766">elit. Donec a diam lectus. Sed sit amet ipsum mauris.</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="613.78125"
+         id="tspan3768">Maecenas congue ligula ac quam viverra nec</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="637.99896"
+         id="tspan3770">consectetur ante hendrerit. Donec et mollis dolor.</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="662.21674"
+         id="tspan3772">Praesent et diam eget libero egestas mattis sit amet</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="686.43445"
+         id="tspan3774">vitae augue. Nam tincidunt congue enim,</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="710.65216"
+         id="tspan3776">ut porta lorem lacinia consectetur. Donec ut libero</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="734.86987"
+         id="tspan3778">sed arcu vehicula ultricies a non tortor. Lorem ipsum</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="759.08759"
+         id="tspan3780">dolor sit amet, consectetur adipiscing elit. Aenean</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="783.3053"
+         id="tspan3782">ut gravida lorem. Ut turpis felis, pulvinar a semper</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="807.52307"
+         id="tspan3784">sed, adipiscing id dolor. Pellentesque auctor nisi id</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="831.74078"
+         id="tspan3786">magna consequat sagittis. Curabitur dapibus enim</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="855.9585"
+         id="tspan3788">sit amet elit pharetra tincidunt feugiat nisl imperdiet.</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="880.17621"
+         id="tspan3790">Ut convallis libero in urna ultrices accumsan.</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="904.39392"
+         id="tspan3792">Donec sed odio eros. Donec viverra mi quis quam</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="928.61163"
+         id="tspan3794">pulvinar at malesuada arcu rhoncus. Cum sociis</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="952.82941"
+         id="tspan3796">natoque penatibus et magnis dis parturient montes,</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="977.04712"
+         id="tspan3798">nascetur ridiculus mus. In rutrum accumsan</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="1001.2648"
+         id="tspan3800">ultricies. Mauris vitae nisi at sem facilisis semper ac</tspan><tspan
+         sodipodi:role="line"
+         x="6.2890778"
+         y="1025.4825"
+         id="tspan3806">in est. Vivamus fermentum semper porta. Nunc diam</tspan></text>
+    <rect
+       style="fill:#00ffff;fill-opacity:1;stroke:none;opacity:1"
+       id="rect3810"
+       width="358.0722"
+       height="7.1428566"
+       x="7.1071434"
+       y="1035.2195"
+       ry="3.5714283" />
+    <rect
+       ry="3.5714273"
+       y="495.39511"
+       x="-899.15729"
+       height="7.1428547"
+       width="349.99127"
+       id="rect3812"
+       style="fill:#00ffff;fill-opacity:1;stroke:none;opacity:1"
+       transform="matrix(-0.00324055,-0.99999475,0.99999521,-0.00309594,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:85.28849030000000653px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold;filter:url(#filter3952)"
+       x="241.92099"
+       y="710.49493"
+       id="text3814"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3816"
+         x="241.92099"
+         y="710.49493">WebKit</tspan><tspan
+         sodipodi:role="line"
+         x="241.92099"
+         y="817.10553"
+         id="tspan3818">Scrollbar</tspan><tspan
+         sodipodi:role="line"
+         x="241.92101"
+         y="923.71619"
+         id="tspan3820">Generator</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3822"
+       y="710.49493"
+       x="241.92099"
+       style="font-size:85.28849030000000653px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#00ffff;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold;filter:url(#filter3842)"
+       xml:space="preserve"><tspan
+         y="710.49493"
+         x="241.92099"
+         id="tspan3824"
+         sodipodi:role="line">WebKit</tspan><tspan
+         id="tspan3826"
+         y="817.10553"
+         x="241.92099"
+         sodipodi:role="line">Scrollbar</tspan><tspan
+         id="tspan3828"
+         y="923.71619"
+         x="241.92101"
+         sodipodi:role="line">Generator</tspan></text>
+  </g>
+</svg>
